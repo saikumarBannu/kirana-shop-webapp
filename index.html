@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirana Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Shree Balaji Kirana</h1>
+      <nav>
+        <a href="#products">Our Products</a>
+        <a href="#about">About Us</a>
+        <a href="#cart">Cart</a>
+      </nav>
+    </header>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Rice" />
+        <h3>Rice (5kg)</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Rice', 250)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Tea" />
+        <h3>Tea Powder (500g)</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('Tea Powder', 120)">Add to Cart</button>
+      </div>
+      <!-- Add more products here -->
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <button onclick="checkout()">Checkout via WhatsApp</button>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We offer fresh groceries, snacks, and daily essentials. Visit us at: 123 Main Street, Your Town.</p>
+      <p>
+        📞 Contact us via WhatsApp: <a href="https://wa.me/919876543210" target="_blank">Order Now</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 Shree Balaji Kirana | All rights reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
